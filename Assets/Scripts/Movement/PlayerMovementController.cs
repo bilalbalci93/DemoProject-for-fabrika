@@ -9,9 +9,11 @@ namespace fabrikademo.PlayerMovement
     public class PlayerMovementController : MonoBehaviour
     {
         [SerializeField] private float _motorForce = 1000f;
+        public float MotorForce { get { return _motorForce; } }
         [SerializeField] private float _rotateSpeed = 1000f;
         public float RotateSpeed { get { return _rotateSpeed; } } // Refactor this into scriptible object
         [SerializeField] private float _maxSpeed = 5f;
+        public bool isFall = false;
 
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private InputData _inputData;

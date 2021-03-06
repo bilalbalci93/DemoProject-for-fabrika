@@ -904,7 +904,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.83672e-40, z: -1.14e-42, w: 6.6e-44}
+  m_BoundingSphereOverride: {x: 4.7019774e-38, y: 0.5, z: 2.3509887e-38, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -933,9 +933,10 @@ GameObject:
   - component: {fileID: 859505228}
   - component: {fileID: 859505227}
   - component: {fileID: 859505225}
+  - component: {fileID: 859505226}
   m_Layer: 0
   m_Name: AI Car 2
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -947,13 +948,26 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859505224}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9a8a805b3edf4de4db2a569544e02082, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &859505226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859505224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c308164c6b3e3934a9a80f59404f0380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickedTransform: {fileID: 0}
 --- !u!54 &859505227
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -968,7 +982,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!4 &859505228
 Transform:
@@ -1157,9 +1171,10 @@ GameObject:
   - component: {fileID: 1033280767}
   - component: {fileID: 1033280766}
   - component: {fileID: 1033280764}
+  - component: {fileID: 1033280765}
   m_Layer: 0
   m_Name: AI Car 4
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1171,13 +1186,26 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033280763}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9a8a805b3edf4de4db2a569544e02082, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &1033280765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033280763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c308164c6b3e3934a9a80f59404f0380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickedTransform: {fileID: 0}
 --- !u!54 &1033280766
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1192,7 +1220,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!4 &1033280767
 Transform:
@@ -1371,6 +1399,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113343209}
   m_Mesh: {fileID: 79179791464767942, guid: c85c2994111c20c448435942a6613fb8, type: 3}
+--- !u!1 &1129647407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8650851659888696326, guid: b15020060961ccc4f9bb7a9b906c0398,
+    type: 3}
+  m_PrefabInstance: {fileID: 805039145595263835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1129647412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129647407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7c637d4d065c94ea4a89133f62c83c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1188874353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,9 +1697,10 @@ GameObject:
   - component: {fileID: 1359178016}
   - component: {fileID: 1359178015}
   - component: {fileID: 1359178013}
+  - component: {fileID: 1359178014}
   m_Layer: 0
   m_Name: AI Car 5
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1665,13 +1712,26 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359178012}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9a8a805b3edf4de4db2a569544e02082, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &1359178014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359178012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c308164c6b3e3934a9a80f59404f0380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickedTransform: {fileID: 0}
 --- !u!54 &1359178015
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1686,7 +1746,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!4 &1359178016
 Transform:
@@ -2160,8 +2220,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606253452}
+  - component: {fileID: 1606253453}
   m_Layer: 0
-  m_Name: NavMesh
+  m_Name: AI Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2175,12 +2236,42 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606253451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44108546, y: -7.596672, z: -11.508289}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1606253453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606253451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6d63f7b69c6524fa075a9b0af4c2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1626119073}
+  minX: -11
+  maxX: 11
+  minZ: -11
+  maxZ: 11
+  cars:
+  - {fileID: 1626119077}
+  - {fileID: 4155676094011234081}
+  - {fileID: 859505228}
+  - {fileID: 1662265097}
+  - {fileID: 1033280767}
+  - {fileID: 1359178016}
+--- !u!1 &1626119073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5396881491485355704, guid: 61adbef2e412f3b4c9f2e0299bd3c866,
+    type: 3}
+  m_PrefabInstance: {fileID: 4162590533578683691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1626119077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8988844864695934123, guid: 61adbef2e412f3b4c9f2e0299bd3c866,
@@ -2198,9 +2289,10 @@ GameObject:
   - component: {fileID: 1662265097}
   - component: {fileID: 1662265096}
   - component: {fileID: 1662265094}
+  - component: {fileID: 1662265095}
   m_Layer: 0
   m_Name: AI Car 3
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2212,13 +2304,26 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662265093}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9a8a805b3edf4de4db2a569544e02082, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &1662265095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662265093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c308164c6b3e3934a9a80f59404f0380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickedTransform: {fileID: 0}
 --- !u!54 &1662265096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2233,7 +2338,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!4 &1662265097
 Transform:
@@ -2754,7 +2859,7 @@ PrefabInstance:
     - target: {fileID: 8296172668667742046, guid: b15020060961ccc4f9bb7a9b906c0398,
         type: 3}
       propertyPath: m_Convex
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b15020060961ccc4f9bb7a9b906c0398, type: 3}
@@ -2772,7 +2877,7 @@ GameObject:
   - component: {fileID: 1148616620877915443}
   m_Layer: 0
   m_Name: AI Car 1
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2789,7 +2894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c308164c6b3e3934a9a80f59404f0380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1626119077}
+  pickedTransform: {fileID: 0}
 --- !u!1 &1383547753051298157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,7 +2965,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!33 &2036170750542374902
 MeshFilter:
@@ -2928,7 +3033,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148616620877915442}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9a8a805b3edf4de4db2a569544e02082, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3071,6 +3176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396881491485355704, guid: 61adbef2e412f3b4c9f2e0299bd3c866,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8988844864695934123, guid: 61adbef2e412f3b4c9f2e0299bd3c866,
         type: 3}
@@ -3427,24 +3537,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8634491827131179008}
   m_Mesh: {fileID: -6732625656487121059, guid: c85c2994111c20c448435942a6613fb8, type: 3}
---- !u!1 &8296172667503964518 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8650851661069003325, guid: b15020060961ccc4f9bb7a9b906c0398,
-    type: 3}
-  m_PrefabInstance: {fileID: 805039145595263835}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8296172667503964519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8296172667503964518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2f50a8e0bb841a5aaa90ae55db8849, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8634491827131179008
 GameObject:
   m_ObjectHideFlags: 0
